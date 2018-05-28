@@ -1,6 +1,8 @@
 # Minimal Clock
 ![](screenshot.png)
 
+*[Available at the Fitbit App Gallery](https://gam.fitbit.com/gallery/clock/49782df6-255f-4483-80b0-de2627b72df0)*
+
 This provides a minimalistic clock face for the *Fitbit Versa* that displays
 the following things:
 
