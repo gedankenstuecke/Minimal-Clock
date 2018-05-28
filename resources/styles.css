@@ -1,0 +1,61 @@
+#timeLabel {
+  font-size: 68;
+  font-family: Seville-Book;
+  text-length: 32;
+  text-anchor: middle;
+  x: 50%-10;
+  y: 50%+10;
+  fill: #ffffff;
+}
+
+#secLabel {
+  font-size: 30;
+  font-family: Seville-Book;
+  text-length: 32;
+  text-anchor: start;
+  x: 70%+10;
+  y: 50%+10;
+  fill: #a0a0a0;
+}
+
+#hrm {
+  font-size: 35;
+  font-family: Seville-Book;
+  text-length: 32;
+  text-anchor: start;
+  x: 35;
+  y: 93%;
+  fill: #38f8df;
+}
+
+#steps {
+  font-size: 35;
+  font-family: Seville-Book;
+  text-length: 32;
+  text-anchor: start;
+  x: 190;
+  y: 93%;
+   /*  fill: #38f8df; */
+}
+
+#dateLabel {
+  font-size: 25;
+  font-family: Colfax;
+  text-length: 32;
+  text-anchor: middle;
+  x: 50%;
+  y: 50%+40;
+  fill: #a0a0a0;
+}
+
+#tempLabel {
+  font-size: 25;
+  font-family: Colfax;
+  text-length: 32;
+  text-anchor: end;
+  x: 95%;
+  y: 10%;
+  fill: #a0a0a0;
+}
+
+.weather { fill: #ffffff; opacity: 1; }
