@@ -21,8 +21,10 @@ clock.granularity = 'seconds';
 let hrLabel = document.getElementById("hrm");
 hrLabel.text = "--";
 let tempLabel = document.getElementById("tempLabel");
-tempLabel.text = "--˚C";
+tempLabel.text = "--";
 
+let tempUnitLabel = document.getElementById("tempUnitLabel");
+tempUnitLabel.text = "˚C";
 
 let chargeLabel = document.getElementById("chargeLabel");
 
@@ -110,9 +112,12 @@ function fetchWeather() {
 function processWeatherData(data) {
   // console.log("The temperature is: " + data.temperature);
   let tempLabel = document.getElementById("tempLabel");
-  tempLabel.text = `${data.temperature}˚C`;
+  tempLabel.text = `${data.temperature}`;
   var img = document.getElementById("weather");
   img.href = `weather/${data.code}.png`;
+  let tempUnitLabel = document.getElementById("tempUnitLabel");
+  tempUnitLabel.text = `${data.temp_unit}`;
+
 }
 
 // Listen for the onopen event
@@ -124,7 +129,12 @@ messaging.peerSocket.onopen = function() {
 // Listen for messages from the companion
 messaging.peerSocket.onmessage = function(evt) {
   if (evt.data) {
-    processWeatherData(evt.data);
+      if (evt.data['type'] == 'new_weather'){
+        processWeatherData(evt.data);
+        } else if (evt.data['type'] == 'new_unit') {
+          let tempUnitLabel = document.getElementById("tempUnitLabel");
+          tempUnitLabel.text = `${evt.data['value']['values'][0]['name']}`;
+        }
   }
 }
 

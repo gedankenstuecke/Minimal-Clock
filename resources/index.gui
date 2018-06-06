@@ -9,5 +9,6 @@
   <image x="162" y="86%" width="22" height="22" href="stat_steps_solid_48px.png" load="sync" />
   <image x="64%" y="2" width="40" height="40" href="weather/36.png" id='weather' class='weather' load="sync" />
   <text id="steps" class='red'/>
-  <text id="tempLabel" />
+  <text id="tempLabel"/>
+  <text id="tempUnitLabel" />
 </svg>
