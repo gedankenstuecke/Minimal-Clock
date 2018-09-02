@@ -53,6 +53,16 @@
   font-family: Colfax;
   text-length: 32;
   text-anchor: end;
+  x: 86%;
+  y: 10%;
+  fill: #a0a0a0;
+}
+
+#tempUnitLabel {
+  font-size: 25;
+  font-family: Colfax;
+  text-length: 32;
+  text-anchor: end;
   x: 95%;
   y: 10%;
   fill: #a0a0a0;
