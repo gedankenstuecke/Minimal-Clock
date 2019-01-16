@@ -56,6 +56,20 @@ Actually, it didn't!
 That's strange, there seems to be something wrong with the Clockface indeed. Please get in touch
 via bgreshake@gmail.com and we can figure out what's going on!
 
+The temperature shows "``270``" or some other ridiculously large number!
+------------------------------------------------------------------------
+
+I've seen this happen in the past when updating from an older version of the
+clockface to a newer version. Usually this can be fixed by going into the
+clockface settings in the Fitbit phone app and manually switch back and forth
+between the measurement units.
+
+Afterwards it should load and display the
+correct values.
+
+If it still doesn't work, please shoot me an email at bgreshake@gmail.com.
+
+
 What's that weird/grey white bar on top of the clock face?
 ----------------------------------------------------------
 
